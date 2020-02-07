@@ -1,0 +1,84 @@
+<!doctype html>
+  <html lang="en">
+       <head>
+           <meta charset="utf-8">
+           <title>Jane Jones' Website</title>
+       </head>
+       <body>
+           <h1>
+               <center>Global Warming</center>
+                <center>By Alejandra</center>
+
+          </h1>
+      </body>
+  </html>
+<link href="index.css" rel="stylesheet" type="text/css">
+
+<div id = "world">
+   <link href="index.css" rel="stylesheet" type="text/css">
+   <img src="world_gif.gif" alt="world" class="world"/>
+</div>
+
+
+<button1>
+    <a href="global_warming.html">
+      <button class="btn"> Global Warming<Button</button>
+<button2>
+    <a href = "Green_House.html">
+      <button class ="btn2"> Future Application <Button/button>
+<button3>
+    <a href = "animals.html">
+      <button class ="btn3"> Affects to the Enviroment <Button/button>
+
+<button4>
+   <button class ="btn4"> src="myAvatar.png" <Button/button>
+
+  
+  
+
+
+
+<div id = "avatar">
+    
+   <link href="index.css" rel="stylesheet" type="text/css">
+   <a href = "animals.html">
+       <img src="myAvatar.png" alt="Avatar" class="avatar"onclick="myFunction()"/>
+</div>
+
+
+ 
+ 
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.color = "yellow";
+  document.getElementById("demo").innerHTML = "Hello my name is Alejandra and I am very passionate about making the world a better place. I hope that my website will inspire you to be part of the movement in which people are concious of how their lifestyles might be affecting the world!";
+}
+</script>
+
+
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
